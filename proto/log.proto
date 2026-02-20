@@ -1,0 +1,18 @@
+syntax ="proto3";
+
+package logcollector;
+
+option go_package="./proto;proto";
+
+service LogService{
+	rpc SendLog(LogRequest) returns (LogResponse);
+}
+
+message LogRequest{
+	string service_name =1;
+	string message=2;
+}
+
+message LogResponse{
+	string status=1;
+}

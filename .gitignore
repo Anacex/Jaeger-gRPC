@@ -1,0 +1,36 @@
+# =============================
+# Project Specific
+# =============================
+
+# Ignore internal documentation folder
+Documentation/
+
+# Ignore compiled binaries
+log-collector
+*.exe
+*.out
+*.test
+
+# Go build cache (if any local)
+bin/
+
+# =============================
+# Go Modules
+# =============================
+# (We DO commit go.mod and go.sum)
+# Do NOT ignore them
+
+# =============================
+# Docker
+# =============================
+*.tar
+
+# =============================
+# OS / Editor
+# =============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
